@@ -1,0 +1,44 @@
+body,html {
+    margin: 0;
+    padding: 0;
+
+}
+* {
+    box-sizing: border-box;
+    font-family: "Source Code Pro" monospace;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section header {
+    z-index: 1;
+}
+
+.section head a {
+    color: black;
+    text-align: center;
+}
+
+.section header h1 {
+    position: relative;
+    font-size: 6rem;
+    z-index: 2;
+    color: black;
+
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+  }
