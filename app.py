@@ -23,3 +23,6 @@ if __name__ == "__main__":
         view_table()
     else:
         pass
+
+print("im testing to see if git commit and pushes are working as per \
+    inside vs code ")
