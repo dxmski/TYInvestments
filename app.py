@@ -1,28 +1,13 @@
-#!./venv/bin/python
+from flask import Flask
+from flask import render_template
+from functions import create_table, insert_table, view_table
+import requests
 
-from functions import create_table,insert_table,view_table
-import argparse
-import sys
+app = Flask(__name__)
 
-#Argparse Config
-parser = argparse.ArgumentParser(description='TY Investments \
-    Database Script')
-
-parser.add_argument('-i', '--insert', help='Input data \
-     into database', action='store_true')
-parser.add_argument('-v', '--view', help='Show all data \
-    inside money table', action='store_true')
-args = parser.parse_args()
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == "__main__":
-    print("running app.py")
-    if args.insert:
-        create_table()
-        insert_table()
-    elif args.view:
-        view_table()
-    else:
-        pass
-
-print("im testing to see if git commit and pushes are working as per \
-    inside vs code ")
+    app.run()

@@ -1,0 +1,18 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+
+}
+* {
+    box-sizing: border-box;
+    font-family: "Source Code Pro" monospace;
+}
+
+.text {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: grey;
+    border: 5px solid black;
+}
